@@ -1,18 +1,18 @@
 # wsl_linux
 Windows subsystem linux with xfce guide
 
-#Intro
+# Intro
 In this guide i will show how i set up a full functional linux workstation on the Windows subsystem linux like the one down bellow: 
 ![Screenshot](screenshots/screenshot.png)
 To do so some minimum skills ins necessary, like write  `.bat` files on windows and do some commands in the linux command line.The scrips and `.bat` files used can be founded in this repository.
 
-#Initial configuration: 
+# Initial configuration: 
 The initial configuration of the `WSL` can be founded in this doc of microsoft:
 https://docs.microsoft.com/en-us/windows/wsl/install-win10
 The linux distro that i will be covering in this guide is `ubuntu`.
 In the final of this initial step covered in the microsoft doc the user will be able to do bash commands, in the next steps will be covered how to set up video and audio in the  `ubuntu` on the `WSL`.
 
-#Video and audio configuration:
+# Video and audio configuration:
 * First donwload a Xserver for windows, the Xserver that i use is the `VcXsrv`found is the link: https://sourceforge.net/projects/vcxsrv/
 * The Xserver is necessary to the video on the `WSL`.
 * Next set up the pulseaudio server on the windows.To do that simply download this script: https://gist.github.com/trzecieu/b46829b2b24c3896c63d4d1b05e2df80#file-install_pulseaudio-bat
