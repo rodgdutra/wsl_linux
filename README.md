@@ -1,8 +1,8 @@
 # wsl_linux
-Windows subsystem linux with xfce guide
+Windows subsystem for linux with xfce and audio support guide
 
 # Intro
-In this guide i will show how i set up a full functional linux workstation on the Windows subsystem linux like the one down bellow: 
+In this guide i will show how i set up a full functional linux workstation on the Windows subsystem for linux like the one down bellow: 
 ![Screenshot](screenshots/screenshot.png)
 To do so some minimum skills ins necessary, like write  `.bat` files on windows and do some commands in the linux command line.The scrips and `.bat` files used can be founded in this repository.
 
@@ -10,7 +10,7 @@ To do so some minimum skills ins necessary, like write  `.bat` files on windows 
 The initial configuration of the `WSL` can be founded in this doc of microsoft:
 https://docs.microsoft.com/en-us/windows/wsl/install-win10
 The linux distro that i will be covering in this guide is `ubuntu`.
-In the final of this initial step covered in the microsoft doc the user will be able to do bash commands, in the next steps will be covered how to set up video and audio in the  `ubuntu` on the `WSL`.
+In the final of this initial step covered in the Microsoft doc the user will be able to do bash commands, in the next steps will be covered how to set up video and audio in the  `ubuntu` on the `WSL`.
 
 # Video and audio configuration:
 * First donwload a Xserver for windows, the Xserver that i use is the `VcXsrv`found is the link: https://sourceforge.net/projects/vcxsrv/
@@ -37,5 +37,5 @@ bash.exe -c "export DISPLAY=:0 && export PULSE_SERVER=tcp:localhost && xfce4-ses
 PAUSE
 ``` 
 * the first line : `CD "C:\Program Files\VcXsrv"` assumes that you installed in the `Program Files`, if the installed folder was another one change this line.
-* Save the file, create a shortcut to this file and click with the right button of the mouse on the shortcut go in advanced and check the run as administrator, this is extra important if you want to use a web browser such as `firefox` or `chromium`, becouse it avoid some lack of permission bugs.
+* Save the file, create a shortcut to this file and click with the right button of the mouse on the shortcut go in advanced and check the run as administrator, this is extra important if you want to use a web browser such as `firefox` or `chromium`, because it avoid some lack of permission bugs.
 * After that launch the shortcut to the `.bat` file and watch the magic happens. 
